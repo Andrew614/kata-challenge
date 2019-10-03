@@ -1,0 +1,27 @@
+This project is designed as a quick and easy code exercise
+to test general knowledge of Ruby, logic and troubleshooting skills.
+
+It can be opened in Rubymine or the code can be run from the CLI.
+
+To run the tests, from the 'single_code_kata' directory run:
+rspec specs/anagram_transformer_spec.rb
+
+These tests will all fail initially. Add code to 'katas/anagram_transformer.rb'
+to get them all to a passing state. There are further directions in this file.
+
+For clarity, 'flipping' a character is defined as moving a character 1 position from
+left to right at the position given. In order to transition the word 'tester' into 'testre'
+the flip method would be called as such:
+
+flip('tester',4)    => 'testre'
+
+the flips_to_transform() method will make use of the flip() method to do the flipping and
+aggregate the total number of flips as its returned value. So to transform 'tester' into
+'street' we would need a total of 6 flips.
+
+Gems used for this project include:
+
+Bundler 1.16.2
+Rspec 3.7.0
+
+But you should be able to run these tests with many different versions of the Rspec gem.
